@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: Install dependencies
-      uses: npm i
+      run: npm i
 
       - name: Build
-        uses: npm run --build
+      run: npm run --build
       
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
